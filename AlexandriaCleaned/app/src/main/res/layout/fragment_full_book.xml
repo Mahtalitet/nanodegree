@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="it.jaschke.alexandria.AddBook">
+
+        <ScrollView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fullBookCover"
+                        android:contentDescription="@string/book_cover"
+                        android:padding="@dimen/half_padding"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_launcher">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/authors"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/abc_text_size_small_material"
+                        android:paddingTop="@dimen/standard_padding"
+                        android:gravity="left|top"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fullBookTitle"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:textStyle="bold"
+                        android:paddingTop="@dimen/standard_padding"
+                        android:gravity="left|fill_vertical"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fullBookSubTitle"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:textStyle="normal"
+                        android:gravity="left|fill_vertical"
+                        />
+/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/categories"
+                        android:textSize="@dimen/abc_text_size_small_material"
+                        android:paddingTop="@dimen/standard_padding"
+                        android:textStyle="normal"
+                        android:gravity="left|bottom"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fullBookDesc"
+                    android:text="Some Text..."
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="normal"
+                    android:padding="@dimen/standard_padding" />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+</FrameLayout>

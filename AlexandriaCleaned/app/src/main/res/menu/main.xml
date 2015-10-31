@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity"
+    >
+
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          app:showAsAction="never"
+          android:icon="@drawable/ic_drawer_p3" />
+
+    <item   android:id="@+id/action_search"
+            android:title="@string/action_search"
+            app:showAsAction="collapseActionView|ifRoom"
+            app:actionViewClass="android.support.v7.widget.SearchView"
+            android:icon="@drawable/abc_ic_search_api_mtrl_alpha" />
+
+
+    <item android:title="@string/action_redo" android:id="@+id/action_next" android:icon="@drawable/ic_action_redo" app:showAsAction="never"/>
+    <item android:title="@string/action_delete" android:id="@+id/action_delete" android:icon = "@drawable/ic_action_delete" app:showAsAction="never"/>
+
+</menu>

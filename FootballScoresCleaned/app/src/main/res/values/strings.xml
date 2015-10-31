@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Football Scores</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="test_text">Test</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="champions_league">UEFA Champions League</string>
+    <string name="bundesliga">Bundesliga</string>
+    <string name="premierleague">Premier League</string>
+    <string name="primeradivison">Primera Division</string>
+    <string name="seriaa">Serie A</string>
+    <string name="matchday_text">Match day</string>
+    <string name="group_stage_text">Group stages</string>
+    <string name="first_knockout_round">First knockout round</string>
+    <string name="quarter_final">Quarter Final</string>
+    <string name="semi_final">Semi Final</string>
+    <string name="final_text">Final</string>
+    <string name="share_text">Share</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <string name="about_text">
+        This Application get Football Matches Score for the Premier League,Seria A,Bundesliga,Primera Division
+        and the Uefa Champions League.
+        All Matches data are acquired from football-data.org free API.
+        All team Logos are acquired from http://hdlogo.wordpress.com/ upon requesting permission form the owner.
+        The original version of this app was created by Yahia Khalid Ibn El Walid Ahmed, and a modified version is given to students in the Udacity Android Nanodegree program.
+        To report any bugs,or suggestions do not hesitate to send a mail to y.k.ibnelwalid@gmail.com.
+
+        This version of the application was modified by Marcin Gruszecki as a part of the Udacity Android Nanodegree course;
+    </string>
+    <string name="about_app_text">The app description</string>
+
+    <string name="dummy_data">{\"timeFrameStart\":\"2015-06-18\",\"timeFrameEnd\":\"2015-06-19\",\"count\":1,\"fixtures\":[{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"HOME\",\"awayTeamName\":\"AWAY\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"HOME\",\"awayTeamName\":\"AWAY\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"HOME\",\"awayTeamName\":\"AWAY\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"HOME\",\"awayTeamName\":\"AWAY\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football-data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football-data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football-data.org/alpha/teams/263\"}},\"date\":\"2015-06-19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"HOME\",\"awayTeamName\":\"AWAY\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}}]}</string>
+
+    <string name="match_status_finished_db" translatable="false" >00:00</string>
+    <string name="match_status_finished">Finished</string>
+    <string name="match_score_scheduled_db" translatable="false" >-1</string>
+    <string name="match_score_scheduled">\?</string>
+    <string name="mime_type_text" translatable="false" >text/plain</string>
+    <string name="file_extension_svg" translatable="false" >.svg</string>
+    <string name="file_extension_png" translatable="false">.png</string>
+    <string name="file_extension_jpg" translatable="false" >.jpg</string>
+
+
+    <string name="widget_background">Football field</string>
+    <string name="home_score">Home team score</string>
+    <string name="home_team">Team playing at home</string>
+    <string name="match_time">Match time</string>
+    <string name="away_team">Team playing away</string>
+    <string name="away_score">Away team score</string>
+    <string name="YYYYMMDD_format" translatable="false" >yyyy-MM-dd</string>
+
+    <string name="home_crest">The crest of home team</string>
+    <string name="away_crest">The crest of away team</string>
+    <string name="home_team_name">Home players</string>
+    <string name="away_team_name">Away players</string>
+    <string name="match_score">The score</string>
+
+    <string name="league_name">The name of the league</string>
+    <string name="league_matchday">The consecutive turn of league games for this season</string>
+    <string name="share_button">Press button to share</string>
+
+    <string name="current_fragment_tag">current_fragment</string>
+    <string name="current_match_id">current_match</string>
+    <string name="main_pager_fragment_tag">main_pager_fragment</string>
+
+    <string name="day_of_week_format" translatable="false" >EEEE</string>
+
+    <string name="api_key" translatable="false" >e136b7858d424b9da07c88f28b61989a</string>
+    <string name="request_format_get" translatable="false" >GET</string>
+    <string name="request_auth_token_x" translatable="false" >X-Auth-Token</string>
+    <string name="crest_url" translatable="false" >crestUrl</string>
+
+    <string name="progress_bar_msg">Downloading results</string>
+    <string name="progress_bar_msg_part2">out of</string>
+    <string name="last_results_download_timestamp" translatable="false">LAST_RESULTS_DOWNLOAD</string>
+
+</resources>
