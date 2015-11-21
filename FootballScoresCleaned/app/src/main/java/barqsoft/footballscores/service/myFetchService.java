@@ -112,7 +112,11 @@ public class myFetchService extends IntentService
             URL fetch = new URL(fetch_build.toString());
             m_connection = (HttpURLConnection) fetch.openConnection();
             m_connection.setRequestMethod("GET");
-            m_connection.addRequestProperty("X-Auth-Token", "e136b7858d424b9da07c88f28b61989a");
+            // TODO Remove key
+            String sApkiKey = "";
+
+            // String sApiKey = "e136b7858d424b9da07c88f28b61989a";
+            m_connection.addRequestProperty("X-Auth-Token", sApiKey);
             m_connection.connect();
 
             // -- Delay due to API limitiation 50 calls / minute -->
@@ -180,26 +184,26 @@ public class myFetchService extends IntentService
                     return;
                 }
 
-                progressBar = (ProgressBar)MainActivity.mainPagerFragment.getView().findViewById(R.id.progress_bar);
+                // -- progressBar = (ProgressBar)MainActivity.mainPagerFragment.getView().findViewById(R.id.progress_bar);
                 // -- Double update due to Progess Bar issue -->
                 // progressBar.setMax(0);
                 // progressBar.setMax(matches.length());
                 // progressBar.setProgress(progressMade);
-                progressBar.setVisibility(ProgressBar.VISIBLE);
-                progressBar.setIndeterminate(true);
+                // -- progressBar.setVisibility(ProgressBar.VISIBLE);
+                // -- progressBar.setIndeterminate(true);
 
-                progressBarMsg = (TextView) MainActivity.mainPagerFragment.getView().findViewById(R.id.progress_bar_msg);
-                progressBarMsg.setText(R.string.progress_bar_msg);
-                progressBarMsg.setVisibility(TextView.VISIBLE);
+                // -- progressBarMsg = (TextView) MainActivity.mainPagerFragment.getView().findViewById(R.id.progress_bar_msg);
+                // -- progressBarMsg.setText(R.string.progress_bar_msg);
+                // -- progressBarMsg.setVisibility(TextView.VISIBLE);
 
                 ListView listView = (ListView)MainActivity.mainPagerFragment.getView().findViewById(R.id.scores_list);
                 listView.setAlpha((float)0.1);
 
                 processJSONdata(JSON_data, getApplicationContext(), true);
 
-                progressBar.setVisibility(ProgressBar.INVISIBLE);
-                progressBarMsg.setVisibility(TextView.INVISIBLE);
-                progressMade = 0;
+                // -- progressBar.setVisibility(ProgressBar.INVISIBLE);
+                // -- progressBarMsg.setVisibility(TextView.INVISIBLE);
+                // -- progressMade = 0;
 
 
 
