@@ -48,6 +48,7 @@
             android:text="@string/share_text"
             android:textSize="@dimen/League"
             android:id="@+id/share_button"
+            android:drawableEnd="@drawable/abc_ic_menu_share_mtrl_alpha"
             android:drawableRight="@drawable/abc_ic_menu_share_mtrl_alpha"
             android:contentDescription="@string/share_button"
             android:layoutDirection="locale"

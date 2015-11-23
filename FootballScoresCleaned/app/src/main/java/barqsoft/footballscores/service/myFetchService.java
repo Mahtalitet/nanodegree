@@ -115,7 +115,7 @@ public class myFetchService extends IntentService
             // TODO Remove key
             String sApkiKey = "";
 
-          
+
             m_connection.addRequestProperty("X-Auth-Token", sApiKey);
             m_connection.connect();
 
