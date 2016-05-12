@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_id": "udacity-project-6",
+    "project_number": "351676945090",
+    "name": "Udacity Project 6"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351676945090:android:83b792e26f07bf18",
+        "client_id": "android:com.example.android.sunshine.app",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.example.android.sunshine.app",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351676945090-etngd8bqmfjnlojompi9qfobrqdft3r0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.sunshine.app",
+            "certificate_hash": "7C8C6F137FDA9E1BCE871FCA587DAC1A40246DF6"
+          }
+        },
+        {
+          "client_id": "351676945090-1rl8cb9u9voipla0947q6ku3ne0p4p75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 2,
+          "test_banner_ad_unit_id": "ca-app-pub-3940256099942544/6300978111",
+          "test_interstitial_ad_unit_id": "ca-app-pub-3940256099942544/1033173712"
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
