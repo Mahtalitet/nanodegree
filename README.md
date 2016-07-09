@@ -11,3 +11,7 @@ The app based on skeleton app provided by Udacity. It displays football match re
 ### Alexandria (Project 3b)
 
 Another app based on a skeleton code delivered by Udacity. It allows scanning of ISBN bar codes of printed books and storing their basic data in a local database.
+
+### YoMamma (Project 4)
+
+After clicking a button app displays a joke pulled from a website.
