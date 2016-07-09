@@ -1,0 +1,13 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/YoMommaActionBar</item>
+    </style>
+
+    <style name="YoMommaActionBar">
+        <item name="android:background">#9a5c3e</item>
+        <item name="android:color">#FFFF66</item>
+    </style>
+
+</resources>

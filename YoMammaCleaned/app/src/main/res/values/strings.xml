@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Yo Momma Jokes Free</string>
+    <string name="app_name_paid">Yo Momma Jokes Full</string>
+    <string name="instructions">Press the button for another Yo Mamma Joke</string>
+    <string name="instructions_paid">Press the button for another Yo Mamma Joke</string>
+    <string name="button_text">Tell Me Free Joke</string>
+    <string name="button_text_paid">Tell Me Joke</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

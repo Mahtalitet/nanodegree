@@ -1,0 +1,25 @@
+apply plugin: 'java'
+
+
+task startServer{
+    doLast {
+        tasks.getByPath(":thejoker:appengineRun")
+    }
+}
+
+task runTest {
+    dependsOn "startServer"
+    finalizedBy "endServer"
+    doLast{
+        tasks.getByPath(":app:test")
+    }
+
+}
+
+task endServer {
+    doLast {
+        tasks.getByPath(":thejoker:appengineStop")
+    }
+}
+
+

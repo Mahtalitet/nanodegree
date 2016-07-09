@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.udacity.gradle.builditbigger"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        paid {
+            minSdkVersion 16
+            applicationId 'com.udacity.gradle.builditbigger.paid'
+            targetSdkVersion 23
+            versionCode 1
+            versionName '1.0'
+        }
+        free {
+            minSdkVersion 16
+            applicationId 'com.udacity.gradle.builditbigger.free'
+            targetSdkVersion 23
+            versionCode 1
+            versionName '1.0'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':yomammajokes')
+    compile project(':project4androidlibrary')
+    compile project(path: ':thejoker', configuration: 'android-endpoints')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    freeCompile 'com.google.android.gms:play-services:8.3.0'
+    freeCompile 'com.google.android.gms:play-services-ads:8.3.0'
+    freeCompile 'com.google.android.gms:play-services-identity:8.3.0'
+    freeCompile 'com.google.android.gms:play-services-gcm:8.3.0'
+}
+
+sourceSets {
+
+    paid {
+
+        java.srcDirs = ['src/paid/java']
+        resources.srcDirs = ['src/paid/res']
+
+    }
+    free {
+        java.srcDirs = ['src/free/java']
+        resources.srcDirs = ['src/free/res']
+    }
+
+}
+
+
+task startServer{
+    doLast {
+        tasks.getByPath(":thejoker:appengineRun")
+    }
+}
+
+task ConfigureTestTask {
+    dependsOn "startServer"
+    finalizedBy "endServer"
+    doLast{
+        tasks.getByPath(":app:test")
+    }
+
+}
+
+task endServer {
+    doLast {
+        tasks.getByPath(":thejoker:appengineStop")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
