@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cVeryDarkBlue">#294860</color>
+    <color name="cBlue">#8dc5d8</color>
+    <color name="cOrange">#f6a926</color>
+    <color name="cDarkBlue">#307699</color>
+    <color name="cGray">#8e8e8e</color>
+    <color name="cWhite">#ffffff</color>
+
+</resources>

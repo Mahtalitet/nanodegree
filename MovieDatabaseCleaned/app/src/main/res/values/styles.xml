@@ -1,0 +1,19 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
+        <item name="actionBarStyle">@style/MyActionBarTheme</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <style name="MyActionBarTheme" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/cVeryDarkBlue</item>
+        <item name="background">@color/cVeryDarkBlue</item>
+        <item name="android:color">@color/cWhite</item>
+        <item name="color">@color/cWhite</item>
+    </style>
+
+    <style name="DetailTextStyle">
+
+    </style>
+
+</resources>

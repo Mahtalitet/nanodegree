@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/cBlue"
+    android:paddingLeft="@dimen/icon_horizontal_margin"
+    android:paddingRight="@dimen/icon_horizontal_margin"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_grid_image_view"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/movie_filler"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/unknown_movie"
+        android:id="@+id/movie_grid_text_view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:typeface="monospace"
+        android:textColor="@color/cWhite"
+        android:textAlignment="center" />
+
+
+</LinearLayout>

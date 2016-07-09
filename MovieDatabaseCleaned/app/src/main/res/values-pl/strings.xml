@@ -1,0 +1,17 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Popularne filmy </string>
+    <string name="app_subtitle">Projekt nr 1</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="action_most_popular">Najpopularniejsze</string>
+    <string name="action_best_rating">Najwyżej oceniane</string>
+    <string name="action_bar_title_most_popular">Najpopularniejsze</string>
+    <string name="action_bar_title_top_rated">Najwyżej oceniane</string>
+    <string name="unknown_movie">Brak danych</string>
+    <string name="title_activity_detail">Informacje</string>
+    <string name="action_favorites">Ulubione</string>
+    <string name="txt_release_date">Premiera</string>
+    <string name="txt_rating">Ocena</string>
+    <string name="msg_network_not_available">Brak dostępu do sieci. \nDostępne tylko dane z karty.</string>
+    <string name="txt_reviews">Recenzje</string>
+    <string name="msg_no_movie_found_in_favorites">Nie wybrano ulubionych filmów.</string>
+</resources>
